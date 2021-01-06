@@ -1,0 +1,156 @@
+body , html {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+*{
+    font-family: 'Dosis', sans-serif;
+    
+}
+body{
+    background-image: url(tile.jpg);
+    width: 100vw;
+    height: 100vh;
+}
+
+.input_paper{
+    position: relative;
+    background-image: url(formbg.jpg);
+    // background-repeat: repeat;
+    height: 300px;
+    width:40%;
+    margin: auto;
+    font-size: xx-large;
+    #inp_text{ // textarea
+        position: relative;
+        top: 13px;
+        resize: none;
+        background-color: rgba(0, 0, 0, 0.0);
+        border: none;
+        // height: 90%;
+        height: 227px;
+        
+        width: 83%;
+        margin-left: 16.5%;
+        outline: none;
+        font-size:x-large;
+        
+    }
+    #inp_date , #inp_time ,#add_btn{
+       position: absolute; 
+        bottom: 0;
+         margin: 1%;
+        /* align-self: flex-end; */
+    }
+    
+   
+    #inp_date{
+        left: 0;
+        width: 30%;
+    }
+    
+    
+    #inp_time{
+    left: 45%;
+    }
+    
+    #add_btn{
+        position: absolute;
+        font-weight: bold;
+        color: white;
+        height: 12%;
+        width: 10%;
+        right: 0;
+        background-color: green;
+    }
+    #clear_btn{
+        position: absolute;
+        font-weight: bold;
+        color: white;
+        height: 12%;
+        width: 10%;
+        background-color: salmon;
+        right: 12%;
+        bottom: 2%;
+        
+
+    }
+}
+
+
+
+h1{
+text-align: center;
+font-family: 'Indie Flower', cursive;
+margin: 0;
+
+}
+
+// הפתקים של המשימות שהיוזר כתב
+.note{
+    position: relative; 
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    animation-name: note-appearance;
+    animation-duration: 1.2s;
+
+    
+
+    @keyframes note-appearance {
+        0%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+
+    .missionText{
+        font-weight: bold;
+        font-size:larger;
+        width: 90%;
+        height: 65%;
+        position: absolute; 
+        top: 15%;
+        margin: 0;
+        overflow-wrap: break-word;
+        overflow: auto;
+    }
+    
+    .noteDate{
+        color: blue;
+        position: absolute; 
+        left: 2%;
+        bottom: 12%;
+        margin: 0;
+    }
+    
+    .noteTime{
+        
+        color: blue;
+        position: absolute; 
+        left: 2%;
+        bottom: 5%;
+        margin: 0;
+    }
+    
+    .noteX{
+       position: absolute;
+       top: 8%;
+       right: 15%;
+       opacity: 0.05;
+     
+    }
+    
+       .noteX:hover{
+           opacity: 1;
+        }
+    
+    
+    
+}
+
+
+

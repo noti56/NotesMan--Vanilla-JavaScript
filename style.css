@@ -1,0 +1,150 @@
+body, html {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+* {
+  font-family: 'Dosis', sans-serif;
+}
+
+body {
+  background-image: url(tile.jpg);
+  width: 100vw;
+  height: 100vh;
+}
+
+.input_paper {
+  position: relative;
+  background-image: url(formbg.jpg);
+  height: 300px;
+  width: 40%;
+  margin: auto;
+  font-size: xx-large;
+}
+
+.input_paper #inp_text {
+  position: relative;
+  top: 13px;
+  resize: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  height: 227px;
+  width: 83%;
+  margin-left: 16.5%;
+  outline: none;
+  font-size: x-large;
+}
+
+.input_paper #inp_date, .input_paper #inp_time, .input_paper #add_btn {
+  position: absolute;
+  bottom: 0;
+  margin: 1%;
+  /* align-self: flex-end; */
+}
+
+.input_paper #inp_date {
+  left: 0;
+  width: 30%;
+}
+
+.input_paper #inp_time {
+  left: 45%;
+}
+
+.input_paper #add_btn {
+  position: absolute;
+  font-weight: bold;
+  color: white;
+  height: 12%;
+  width: 10%;
+  right: 0;
+  background-color: green;
+}
+
+.input_paper #clear_btn {
+  position: absolute;
+  font-weight: bold;
+  color: white;
+  height: 12%;
+  width: 10%;
+  background-color: salmon;
+  right: 12%;
+  bottom: 2%;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  margin: 0;
+}
+
+.note {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 250px;
+  -webkit-animation-name: note-appearance;
+          animation-name: note-appearance;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+}
+
+@-webkit-keyframes note-appearance {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes note-appearance {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.note .missionText {
+  font-weight: bold;
+  font-size: larger;
+  width: 90%;
+  height: 65%;
+  position: absolute;
+  top: 15%;
+  margin: 0;
+  overflow-wrap: break-word;
+  overflow: auto;
+}
+
+.note .noteDate {
+  color: blue;
+  position: absolute;
+  left: 2%;
+  bottom: 12%;
+  margin: 0;
+}
+
+.note .noteTime {
+  color: blue;
+  position: absolute;
+  left: 2%;
+  bottom: 5%;
+  margin: 0;
+}
+
+.note .noteX {
+  position: absolute;
+  top: 8%;
+  right: 15%;
+  opacity: 0.05;
+}
+
+.note .noteX:hover {
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */
